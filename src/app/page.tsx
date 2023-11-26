@@ -140,7 +140,7 @@ export default function Home() {
           <div className="grid-cols-form grid gap-3 pt-5">
             <label
               className=" text-sm font-medium text-zinc-700"
-              htmlFor="email">
+              htmlFor="projects">
               Portifolio projects
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
                 Share a few snippets of your work.
@@ -148,7 +148,7 @@ export default function Home() {
             </label>
             <FileInput.Root className=" ">
               <FileInput.Trigger />
-              <FileInput.Control />
+              <FileInput.Control multiple />
             </FileInput.Root>
           </div>
 
