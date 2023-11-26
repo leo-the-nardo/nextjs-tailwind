@@ -13,6 +13,7 @@ import {
 } from "lucide-react"
 import PrimaryNavItem from "./PrimaryNavItem"
 import SecondaryNavItem from "./SecondaryNavItem"
+import UsedSpaceWidget from "./UsedSpaceWidget"
 
 type Props = {}
 
@@ -43,6 +44,7 @@ export default function Sidebar({}: Props) {
           <SecondaryNavItem icon={LifeBuoy} title="Support" />
           <SecondaryNavItem icon={Settings} title="Settings" />
         </nav>
+        <UsedSpaceWidget />
       </div>
     </aside>
   )
