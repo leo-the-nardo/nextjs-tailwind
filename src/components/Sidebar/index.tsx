@@ -14,6 +14,7 @@ import {
 import PrimaryNavItem from "./PrimaryNavItem"
 import SecondaryNavItem from "./SecondaryNavItem"
 import UsedSpaceWidget from "./UsedSpaceWidget"
+import Profile from "./Profile"
 
 type Props = {}
 
@@ -45,6 +46,10 @@ export default function Sidebar({}: Props) {
           <SecondaryNavItem icon={Settings} title="Settings" />
         </nav>
         <UsedSpaceWidget />
+
+        <div className="h-px bg-zinc-200"></div>
+
+        <Profile />
       </div>
     </aside>
   )
