@@ -5,11 +5,14 @@ import {
   CheckSquare,
   Flag,
   Home,
+  LifeBuoy,
   Search,
+  Settings,
   SquareStack,
   Users,
 } from "lucide-react"
 import PrimaryNavItem from "./PrimaryNavItem"
+import SecondaryNavItem from "./SecondaryNavItem"
 
 type Props = {}
 
@@ -34,6 +37,13 @@ export default function Sidebar({}: Props) {
         <PrimaryNavItem icon={Flag} title="Reporting" />
         <PrimaryNavItem icon={Users} title="Users" />
       </nav>
+
+      <div className="mt-auto flex flex-col gap-6">
+        <nav className="flex flex-col gap-1">
+          <SecondaryNavItem icon={LifeBuoy} title="Support" />
+          <SecondaryNavItem icon={Settings} title="Settings" />
+        </nav>
+      </div>
     </aside>
   )
 }
