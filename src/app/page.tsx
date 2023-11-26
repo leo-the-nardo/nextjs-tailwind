@@ -1,7 +1,7 @@
 import { Input } from "@/components/Input"
 import { SettingsTabs } from "@/components/SettingsTabs"
-import * as Tabs from "@radix-ui/react-tabs"
 import { Mail } from "lucide-react"
+import * as FileInput from "@/components/Form/FileInput"
 
 export default function Home() {
   return (
@@ -49,7 +49,6 @@ export default function Home() {
                 <Input.Control defaultValue="Rhye" />
               </Input.Root>
             </div>
-            <div />
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
@@ -70,22 +69,23 @@ export default function Home() {
                 />
               </Input.Root>
             </div>
-            <div />
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
             <label
               className=" text-sm font-medium text-zinc-700"
-              htmlFor="email">
+              htmlFor="photo">
               Your photo
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
                 This will be displayed on your profile.
               </span>
             </label>
-            <div className="grid grid-cols-1 gap-6">
-              <div></div>
-            </div>
-            <div />
+
+            <FileInput.Root className="flex flex-row items-start gap-5">
+              <FileInput.ImagePreview />
+              <FileInput.Trigger />
+              <FileInput.Control />
+            </FileInput.Root>
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
@@ -103,7 +103,6 @@ export default function Home() {
                 />
               </Input.Root>
             </div>
-            <div />
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
@@ -113,7 +112,6 @@ export default function Home() {
               Country
             </label>
             <div className="grid grid-cols-1 gap-6"></div>
-            <div />
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
@@ -123,7 +121,6 @@ export default function Home() {
               Timezone
             </label>
             <div className="grid grid-cols-1 gap-6"></div>
-            <div />
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
@@ -138,7 +135,6 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6">
               <div></div>
             </div>
-            <div />
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
@@ -150,10 +146,10 @@ export default function Home() {
                 Share a few snippets of your work.
               </span>
             </label>
-            <div className="grid grid-cols-1 gap-6">
-              <div></div>
-            </div>
-            <div />
+            <FileInput.Root className=" ">
+              <FileInput.Trigger />
+              <FileInput.Control />
+            </FileInput.Root>
           </div>
 
           <div className=" flex flex-row items-center justify-end gap-3 pt-5">
