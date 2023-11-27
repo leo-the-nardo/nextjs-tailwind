@@ -1,4 +1,5 @@
 export * from "./Control"
+export * from "./FileItem"
 export * from "./FileList"
 export * from "./ImagePreview"
 export * from "./Root"
