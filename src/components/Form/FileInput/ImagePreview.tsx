@@ -2,7 +2,6 @@
 import { User } from "lucide-react"
 import { useFileInput } from "."
 import { useMemo } from "react"
-import Image from "next/image"
 
 type Props = {}
 

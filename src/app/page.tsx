@@ -34,7 +34,7 @@ export default function Home() {
         <form
           id="my-details"
           className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200">
-          <div className="grid-cols-form grid gap-3">
+          <div className="grid grid-cols-form gap-3">
             <label
               className="text-sm font-medium text-zinc-700 "
               htmlFor="firstName">
@@ -51,7 +51,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               className="text-sm font-medium text-zinc-700 "
               htmlFor="email">
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               className=" text-sm font-medium text-zinc-700"
               htmlFor="photo">
@@ -88,7 +88,7 @@ export default function Home() {
             </FileInput.Root>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               className="text-sm font-medium text-zinc-700 "
               htmlFor="role">
@@ -105,7 +105,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               className="text-sm font-medium text-zinc-700 "
               htmlFor="country">
@@ -114,7 +114,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6"></div>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               className="text-sm font-medium text-zinc-700 "
               htmlFor="timezone">
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6"></div>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               className=" text-sm font-medium text-zinc-700"
               htmlFor="email">
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               className=" text-sm font-medium text-zinc-700"
               htmlFor="projects">
@@ -149,6 +149,7 @@ export default function Home() {
             <FileInput.Root className=" ">
               <FileInput.Trigger />
               <FileInput.Control multiple />
+              <FileInput.FileList />
             </FileInput.Root>
           </div>
 
