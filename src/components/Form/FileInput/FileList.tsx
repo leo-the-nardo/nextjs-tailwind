@@ -2,14 +2,16 @@
 import { Trash2, UploadCloud } from "lucide-react"
 import { useFileInput } from "."
 import { formatBytes } from "@/utils/formatBytes"
+import { useAutoAnimate } from "@formkit/auto-animate/react"
 
 type Props = {}
 
 export function FileList({}: Props) {
   const { files } = useFileInput()
+  const [parent] = useAutoAnimate()
 
   return (
-    <div className="mt-4 flex flex-col gap-3">
+    <div ref={parent} className="mt-4 flex flex-col gap-3">
       {files.map((file) => {
         return (
           <div
