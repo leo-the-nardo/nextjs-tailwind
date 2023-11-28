@@ -11,8 +11,10 @@ export default function Profile({}: Props) {
         src="https://github.com/leo-the-nardo.png"
       />
       <div className="flex flex-col truncate">
-        <p className="text-sm font-semibold text-zinc-900">Leonardo Nardo</p>
-        <p className="truncate text-sm text-zinc-500">
+        <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
+          Leonardo Nardo
+        </p>
+        <p className="truncate text-sm text-zinc-500 dark:text-zinc-400">
           asdasdasdasdasdasdasdasdasdasdas@gmail.com
         </p>
       </div>
